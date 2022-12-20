@@ -1,0 +1,11 @@
+.screen{
+    height: 35px;
+    border-radius: 15px;
+    width: 255px;
+    margin: 5px;
+    font-size: 4rem;
+    text-align: right;
+    font-size: 25px;
+    background-color: #c7cfd3;
+    
+}

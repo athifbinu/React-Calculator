@@ -1,0 +1,14 @@
+.button-number{
+    background-color: black;
+    color: #ffff;
+    width: 30px;
+    height: 36px;
+    font-size: 2rem;
+    margin: 18px;
+    border-radius: 8px white;
+}
+
+.button-number:hover
+{
+    border: 2px solid yellowgreen;
+}

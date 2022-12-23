@@ -1,30 +1,30 @@
 import React, { useState } from 'react'
+import Screen from '../Screen/Screen'
 
 function Body() {
 
- const [count,setcount]=useState(0)
-
-
- function addcount(){
-  setcount(count+1)
- }
-
-
- console.log(count)
+    const [value,btnclick] =useState()
 
 
 
+    function btnclieked(){
+      btnclick(value+=value)
+    }
 
 
 
+       
 
+   
 
   return (
     <div>
 
-    <button className='button-number' onClick={addcount} >7</button>
-    <button className='button-number' >8</button>
-    <button className='button-number' >9</button>
+            <Screen value={value} />
+
+    <button className='button-number' onClick={btnclieked}  >7</button>
+    <button className='button-number'  onClick={btnclieked}  >8</button>
+    <button className='button-number'  onClick={btnclieked}  >9</button>
     <button className='button-number' >/</button>
 
 

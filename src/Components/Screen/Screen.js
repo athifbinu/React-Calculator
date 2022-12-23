@@ -1,16 +1,18 @@
 import React from 'react'
 
 function Screen(props) {
-
-     console.log(props.name)
+  
+      
   return (
     <div>
       
-
-         <input  type="text" className='screen'  />
-      
-
+       
+      <div className='screen'>
+           {props.value}
+      </div>
+        
     </div>
+
   )
 }
 

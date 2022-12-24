@@ -43,7 +43,7 @@ function Body() {
     <button  name='9' className='button-number' onClick={handleClick}    >9</button>
     <button name='/' className='button-number'onClick={handleClick}   >/</button>
 
-
+ 
     <button name='6' className='button-number' onClick={handleClick}  >6</button>
     <button name='5' className='button-number' onClick={handleClick}  >5</button>
     <button name='4' className='button-number'onClick={handleClick}   >4</button>

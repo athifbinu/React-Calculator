@@ -3,48 +3,65 @@ import Screen from '../Screen/Screen'
 
 function Body() {
 
-    const [value,btnclick] =useState()
+  const[result,setResult]=useState("")
 
+       //continus click
+   const handleClick =(e)=>{
 
+     setResult(result.concat(e.target.name));
+     console.log(result)
+           
+   }
 
-    function btnclieked(){
-      btnclick(value+=value)
+      //clear
+   const clear =()=>{
+          // setResult(result.slice(0,-1))  //backspace
+          setResult("")
+   }
+
+          //result
+   const calculate =()=>{
+    try {
+      setResult(eval(result).toString());
+
+    }catch(err) {
+        alert("add corect value")
     }
+ 
+   }
+    
 
 
-
-       
-
-   
 
   return (
     <div>
 
-            <Screen value={value} />
+            <Screen  result={result} />
 
-    <button className='button-number' onClick={btnclieked}  >7</button>
-    <button className='button-number'  onClick={btnclieked}  >8</button>
-    <button className='button-number'  onClick={btnclieked}  >9</button>
-    <button className='button-number' >/</button>
-
-
-    <button className='button-number' >6</button>
-    <button className='button-number' >5</button>
-    <button className='button-number' >4</button>
-    <button className='button-number' >*</button>
-
-    <button className='button-number' >3</button>
-    <button className='button-number' >2</button>
-    <button className='button-number' >1</button>
-    <button className='button-number' >+</button>
-
-    <button className='button-number' >c</button>
-    <button className='button-number' >0</button>
-    <button className='button-number' >=</button>
-    <button className='button-number' >-</button>
+    <button  name='7' className='button-number' onClick={handleClick}   >7</button>
+    <button  name='8' className='button-number' onClick={handleClick}    >8</button>
+    <button  name='9' className='button-number' onClick={handleClick}    >9</button>
+    <button name='/' className='button-number'onClick={handleClick}   >/</button>
 
 
+    <button name='6' className='button-number' onClick={handleClick}  >6</button>
+    <button name='5' className='button-number' onClick={handleClick}  >5</button>
+    <button name='4' className='button-number'onClick={handleClick}   >4</button>
+    <button name='*' className='button-number' onClick={handleClick}  >*</button>
+
+    <button name='3' className='button-number'onClick={handleClick}   >3</button>
+    <button name='2' className='button-number' onClick={handleClick}  >2</button>
+    <button name='1' className='button-number'onClick={handleClick}   >1</button>
+    <button name='+' className='button-number'onClick={handleClick}   >+</button>
+
+    <button id='clear'   onClick={clear}  >c</button>
+    <button name='0' className='button-number' onClick={handleClick}  >0</button>
+    <button    className='button-number'onClick={calculate}   >=</button>
+    <button name='-' className='button-number'onClick={handleClick}   >-</button>
+
+ 
     </div>
+
 
 
   )

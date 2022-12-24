@@ -6,9 +6,39 @@
     font-size: 2rem;
     margin: 18px;
     border-radius: 8px white;
+    cursor: pointer;
+    text-decoration: none;
+
 }
 
 .button-number:hover
 {
-    border: 2px solid yellowgreen;
+    opacity: 1;
+    cursor: pointer;
+    background-color: #74cf29; 
+    box-shadow:0 0 6px #74cf29,
+               0 0 22px #74cf29,
+               0 0 62px #74cf29,
+               0 0 155px #74cf29;
+}
+
+#clear{
+    background-color: red;
+    color: #fff;
+    width: 30px;
+    text-decoration: none;
+    height: 36px;
+    font-size: 2rem;
+    margin: 18px;
+    border-radius: 8px white;
+}
+
+#clear:hover{
+    opacity: 1;
+    cursor: pointer;
+    background-color: #DD0004; 
+    box-shadow:0 0 10px #DD0004,
+               0 0 35px #DD0004,
+               0 0 70px #DD0004,
+               0 0 165px #DD0004;
 }

@@ -8,7 +8,7 @@ function Screen(props) {
       
        
       <div className='screen'>
-           {props.value}
+            {props.result}
       </div>
         
     </div>
